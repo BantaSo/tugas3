@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15" />
+    <title>Assignment 3</title>
+</head>
+<body>
+    {{if eq .status_water "aman"}}
+    <p>AIR </p>
+        <div style="background-color: rgba(0, 128, 0, 0.63); width: 100%;">
+            <p style="color: white; text-align: center;">
+                {{.water}} <br >  Status: {{.status_water}}
+            </p>
+            <div style="background-color: rgba(0, 128, 0, 0.63); width: 100%;"></div>
+        </div>
+    {{end}}
+    {{if eq .status_water "siaga"}}
+    <p>AIR </p>
+        <div style="background-color: rgba(255, 255, 0, 0.692); width: 100%;">
+            <p style="color: black; text-align: center;">
+                {{.water}} <br> Status: {{.status_water}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_water "bahaya"}}
+    <p>AIR </p>
+        <div style="background-color: rgba(255, 0, 0, 0.568); width: 100%;">
+            <p style="color: white; text-align: center;">
+                {{.water}} <br>  Status: {{.status_water}}
+            </p>
+        </div>
+    {{end}}
+
+    <br>
+
+    {{if eq .status_wind "aman"}}
+    <p>ANGIN </p>
+        <div style="background-color: rgba(0, 128, 0, 0.63); width: 100%;">
+            <p style="color: white; text-align: center;">
+                {{.wind}} <br> Status: {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_wind "siaga"}}
+    <p>ANGIN </p>
+        <div style="background-color: rgba(255, 255, 0, 0.692); width: 100%;">
+            <p style="color: black; text-align: center;">
+                {{.wind}} <br>  Status: {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_wind "bahaya"}}
+    <p>ANGIN </p>
+        <div style="background-color: rgba(255, 0, 0, 0.568); width: 100%;">
+            <p style="color: white; text-align: center;">
+              {{.wind}} <br>  Status: {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+</body>
+</html>
